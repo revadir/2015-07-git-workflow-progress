@@ -1,4 +1,7 @@
-# Default is "World"
-# Author: Reva (reva.revadigar@autodesk.com)
-name = ARGV.first || "World";
-puts "Hello, #{name}!";
+require 'greeter'
+
+# Default is World
+name = ARGV.first || "World"
+
+greeter = Greeter.new(name)
+puts greeter.greet
